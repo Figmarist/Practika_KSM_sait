@@ -1,0 +1,301 @@
+$Black: #000
+$Grey: #6F6F6F
+$Orange: #FF9900
+$White: #fff
+$bgGrey: #f5f3f2
+$footerGrey: #E0E0E0
+
+@font-face
+  font-family: Roboto
+  font-style: normal
+  font-weight: 400
+  src: url(../fonts/woff/roboto-regular.woff2)
+
+@font-face
+  font-family: Roboto
+  font-style: normal
+  font-weight: 700
+  src: url(../fonts/woff/roboto-bold.woff2)
+
+::-webkit-scrollbar // scroll измененный
+  width: 7px
+::-webkit-scrollbar-vertical
+  background-color: #f1f1f1
+
+::-webkit-scrollbar-thumb
+  background-color: $Grey
+  border-radius: 6px
+
+*
+  box-sizing: border-box
+
+body
+  font-family: Roboto
+  background-color: $bgGrey
+a
+  color: $Black
+  text-decoration: none
+
+input // обнуление свойств
+  color: $Grey
+  border: none
+
+input:focus
+  outline: none
+
+button
+  cursor: pointer
+  color: #000
+  border: none
+
+button:focus
+  outline: none
+
+h2
+  font-size: 4em
+
+hr
+  margin: 1em 0
+  border-top: 1px solid lightgrey
+
+h3
+  font-size: 3em
+  flex: 1
+  padding: 0 1em
+
+.header
+  background-color: $White
+  display: flex
+  color: $Grey
+  padding: 1.5em 0 2em
+  &__logo-img
+    width: 200px
+  &__logo
+    display: flex
+    align-items: center
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__button
+    background: $White
+    font-weight:bold
+    border: 2px solid $Black
+
+.main // основа
+  display: flex
+  flex-direction: column
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1.5em
+  &__sub-title
+    background: $Orange
+    margin: 2em 0
+    color: $White
+    align-items: center
+    display: flex
+    height: 80px
+  &__white-box // белый бокс на sub-title
+    height: 100%
+    background-color: $bgGrey
+  &__white-box-right
+    width: 45%
+  &__white-box-left
+    width: 35%
+
+.footer
+  background-color: $White
+  display: flex
+  color: $Grey
+  padding: 2em 0
+  &__logo-img
+    width: 200px
+  &__logo
+    display: flex
+    align-items: center
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__nav
+    font-size: 1.2em
+  &__nav-wrapper
+    display: flex
+    flex-direction: column
+    gap: 2em
+  &__address
+    color: $Black
+
+.nav
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    width: 600px
+  &__item-link
+    color: $Grey
+
+.h2
+  &__center
+    text-align: center
+    padding-top: 0.5em
+.button
+  border-radius: 50px
+  padding: 1em
+  border: 2px solid #000
+  &_orange //оранж кнопка
+    background-color: $Orange
+    border: none
+    font-weight: 700
+    color: #fff
+    margin: 1em
+
+.wrapper
+  width: 1300px
+  margin: auto
+
+.title
+  &__left
+    text-align: right
+  &__right
+    text-align: left
+  &__center
+    text-align: center
+.swiper
+  &__img
+    object-fit: cover
+    width: 1300px
+    height: 750px
+
+.task // задачи
+  &__item
+    display: flex
+    gap: 5em
+    padding: 2em 0
+    align-items: center
+  &__item-number
+    background-color: $Orange
+    color: $White
+    font-size: 3em
+    padding: 0.3em
+    font-weight: bold
+    align-items: flex-start
+  &__text1
+    font-size: 2em
+    font-weight: bold
+    width: 50%
+  &__text2
+    font-size: 1em
+    width: 40%
+    color: $Grey
+    padding-right: 1em
+
+.info-block
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 5em
+  margin-bottom: -80px
+  position: relative
+
+.contacts
+  background-color: $White
+  height: 300px
+  width: 240px
+  padding: 2em
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &__button
+    display: flex
+    width: 100%
+    justify-content: end
+  &__title
+    font-size: 2em
+  &__info
+    font-size: 1.2em
+    padding-top: 2em
+  &__div
+    padding: 2em
+  &__circle
+    background-color: #2D2D2D
+    color: $White
+    border: none
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+
+@media screen and (max-width: 1300px)
+  body
+    font-size: 13px
+  h2
+    font-size: 2em
+    text-align: center
+  h3
+    font-size: 3em
+  .wrapper
+    width: 100%
+  .nav
+    &__wrapper
+      flex-wrap: wrap
+      width: auto
+      gap: 2em
+      flex-direction: row
+      align-items: center
+  .header
+    &__wrapper
+      flex-wrap: wrap
+      justify-content: center
+      gap: 2em
+      font-size: 1.2em
+    &__logo-img
+      width: 150px
+
+  .footer
+    gap: 2em
+    &__wrapper
+      flex-direction: column
+      gap: 2em
+    &__logo-img
+      width: 150px
+    &__nav
+      font-size: 1.2em
+    &__address
+      font-size: 1.2em
+  .task
+    &__item
+      flex-direction: column
+      gap: 1em
+    &__text1
+      text-align: center
+    &__text2
+      width: 80%
+      font-size: 1.3em
+  .swiper
+    &__img
+      width: 100vw
+
+@media screen and (max-width: 870px)
+  h3
+    font-size: 1.75em
+  .info-block
+    gap: 1em
+    flex-wrap: wrap
+  .contacts
+    height: 200px
+    width: 200px
+  .nav
+    &__wrapper
+      flex-wrap: wrap
+      width: auto
+      gap: 2em
+      flex-direction: column
+      align-items: center
+      font-size: 1.1em
+  .footer
+    &__nav
+      font-size: 1.1em
+  

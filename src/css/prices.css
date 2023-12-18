@@ -1,0 +1,164 @@
+.production {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+  gap: 2em;
+}
+.production__title {
+  color: #6F6F6F;
+  font-size: 2em;
+}
+.production__text-title {
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  gap: 1em;
+}
+.production__info {
+  color: #6F6F6F;
+  font-size: 1.1em;
+  width: 40%;
+}
+.production__info-title {
+  color: #6F6F6F;
+  display: flex;
+  gap: 6.5em;
+}
+.production__num {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.material-list {
+  display: flex;
+  gap: 5em;
+  padding: 2em 0;
+}
+.material-list__number {
+  background-color: #FF9900;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0.3em;
+}
+.material-list__photo {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 40%;
+}
+.material-list__photo-text {
+  font-size: 2em;
+  font-weight: bold;
+}
+.material-list__photo-img {
+  width: 20em;
+}
+.material-list__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  align-items: flex-start;
+}
+.material-list__info-text {
+  font-size: 1.1em;
+  color: #6F6F6F;
+}
+.material-list__info-button {
+  border-radius: 50px;
+  background-color: #FF9900;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1570px) {
+  h3 {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main {
+    font-size: 1.3em;
+  }
+  .production {
+    flex-direction: column;
+    align-items: center;
+  }
+  .production__title {
+    text-align: center;
+  }
+  .production__text-title {
+    display: flex;
+  }
+  .production__info {
+    width: 80%;
+    text-align: center;
+  }
+  .material-list {
+    gap: 1em;
+    padding: 1em;
+  }
+  .material-list__info {
+    width: 100%;
+  }
+  .material-list__photo-img {
+    width: 300px;
+  }
+  .material-list__info-text {
+    font-size: 1.2em;
+  }
+  .footer__address {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 820px) {
+  h3 {
+    font-size: 2em;
+  }
+  .material-list {
+    font-size: 0.9em;
+  }
+  .material-list__photo-img {
+    width: 250px;
+  }
+  .material-list__photo-text {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 690px) {
+  h3 {
+    font-size: 1.35em;
+  }
+}
+@media screen and (max-width: 645px) {
+  .material-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .material-list__photo-img {
+    width: 220px;
+  }
+  .material-list__number {
+    font-size: 2.5em;
+  }
+  .main__sub-title {
+    font-size: 0.99em;
+  }
+}
+@media screen and (max-width: 381px) {
+  .production__num {
+    margin: 0 2em;
+  }
+  .production__text-title {
+    width: 50%;
+    gap: 2.2em;
+  }
+  .production__info-title {
+    gap: 5em;
+  }
+}/*# sourceMappingURL=prices.css.map */
