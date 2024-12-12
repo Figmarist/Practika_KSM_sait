@@ -40,6 +40,8 @@ a {
 input {
   color: #6F6F6F;
   border: none;
+  font-size: 20px;
+  color: black;
 }
 
 input:focus {
@@ -92,7 +94,9 @@ h3 {
 .header__button {
   background: #fff;
   border: 2px solid #000;
+  font-weight: bold;
 }
+
 .main {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,8 @@
-new Swiper(".swiper", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+'use strict'
+// свайпер
+new Swiper('.swiper', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+})

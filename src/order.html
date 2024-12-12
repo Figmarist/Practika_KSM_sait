@@ -1,177 +1,248 @@
 <!DOCTYPE html>
 <html lang="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/normalise.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/prices.css" />
+		<link rel="stylesheet" href="./css/swiper.css" />
+		<link rel="stylesheet" href="./css/order.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="./icons/favicons/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="./icons/favicons/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="./icons/favicons/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./icons/favicons/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="./icons/favicons/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="./icons/favicons/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="./icons/favicons/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="./icons/favicons/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./icons/favicons/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="./icons/favicons/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./icons/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="./icons/favicons/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./icons/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Заявка</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/normalise.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/prices.css">
-  <link rel="stylesheet" href="./css/swiper.css">
-  <link rel="stylesheet" href="./css/order.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="./icons/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./icons/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./icons/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./icons/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./icons/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./icons/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./icons/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./icons/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./icons/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <title>Заявка</title>
-</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo logo">
+					<a href="index.html"
+						><img class="header__logo-img" src="./icons/logo.svg" alt=""
+					/></a>
+				</div>
+				<nav class="header__nav nav">
+					<ul class="nav__wrapper">
+						<li class="nav__item">
+							<a href="index.html#services" class="nav__item-link"> Услуги </a>
+						</li>
+						<li class="nav__item">
+							<a href="prices.html#materials" class="nav__item-link">
+								Стоимость материалов и монтажа
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="index.html#portfolio" class="nav__item-link">
+								Портфолио
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="login.html" class="nav__item-link"> Отследить заказ </a>
+						</li>
+					</ul>
+				</nav>
+				<form action="order.html#order">
+					<button class="header__button button">Оставить заявку →</button>
+				</form>
+			</div>
+		</header>
 
-<body>
-  <header class="header">
-    <div class="header__wrapper wrapper">
-      <div class="header__logo logo">
-        <a href="index.html"><img class="header__logo-img" src="./icons/logo.svg" alt=""></a>
-      </div>
-      <nav class="header__nav nav">
-        <ul class="nav__wrapper">
-          <li class="nav__item">
-            <a href="index.html#services" class="nav__item-link">
-              Услуги
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="prices.html#materials" class="nav__item-link">
-              Стоимость материалов и монтажа
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#portfolio" class="nav__item-link">
-              Портфолио
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <form action="order.html#order">
-        <button class="header__button button">
-          Оставить заявку →
-        </button>
-      </form>
-    </div>
-  </header>
+		<main class="main">
+			<div class="main__sub-title title__right">
+				<div class="main__white-box main__white-box-left"></div>
+				<h3>Что вы получите выбрав нас</h3>
+			</div>
 
-  <main class="main">
+			<div class="wrapper">
+				<div class="order">
+					<form class="form">
+						<div class="form__text">
+							<div class="form__text-title">Оставьте заявку</div>
+							<div class="form__text-description">
+								Мы направим вам предложение, проконсультируем по вопросам
+								качества, техническим характеристикам конструкций и их
+								сравнительному анализу
+							</div>
 
-    <div class="main__sub-title title__right">
-      <div class="main__white-box main__white-box-left"></div>
-      <h3>Что вы получите выбрав нас</h3>
-    </div>
+							<div class="form__text-label">
+								<label for="">Ваше имя:</label>
+								<input
+									type="text"
+									name="name"
+									placeholder="Введите имя"
+									required
+								/>
+								<label for="">Номер телефона: </label>
+								<input
+									type="text"
+									name="name"
+									placeholder="Введите номер телефона"
+									required
+								/>
+								<label for="">Название компании: </label>
+								<input
+									type="text"
+									name="name"
+									placeholder="Введите название компании"
+									required
+								/>
+							</div>
+							<button class="button__form">Отправить</button>
+						</div>
+					</form>
 
-    <div class="wrapper">
-      <div class="order">
-        
-          <form class="form">
-            <div class="form__text">
+					<div class="order__text">
+						<div class="order__text-div">
+							<div class="order__text-num">01</div>
+							<div class="order__text-num-info">
+								Эскиз фасада с цветовыми решениями
+							</div>
+						</div>
 
-              <div class="form__text-title">Оставьте заявку</div>
-              <div class="form__text-description">Мы направим вам предложение, проконсультируем по
-                вопросам качества, техническим характеристикам конструкций и их сравнительному анализу</div>
+						<div class="order__text-div">
+							<div class="order__text-num">02</div>
+							<div class="order__text-num-info">Схема раскладки</div>
+						</div>
 
-              <div class="form__text-label">
+						<div class="order__text-div">
+							<div class="order__text-num">03</div>
+							<div class="order__text-num-info">Альбом технических решений</div>
+						</div>
 
-                <label for="">Ваше имя:</label>
-                <input type="text" name="name" placeholder="Введите имя" required>
-                <label for="">Номер телефона: </label>
-                <input type="text" name="name" placeholder="Введите номер телефона" required>
-                <label for="">Название компании: </label>
-                <input type="text" name="name" placeholder="Введите название компании" required>
+						<div class="order__text-div">
+							<div class="order__text-num">04</div>
+							<div class="order__text-num-info">
+								Подробная спецификация материалов
+							</div>
+						</div>
 
-              </div>
-              <input type="submit" class="button__form" value="Отправить">
+						<div class="order__text-div">
+							<div class="order__text-num">05</div>
+							<div class="order__text-num-info">
+								Выгодное предложение на работы и материалы
+							</div>
+						</div>
 
-            </div>
-          </form>
-        
-        <div class="order__text">
+						<button class="order__text-button">Пример пакета документов</button>
+					</div>
+				</div>
 
+				<img src="img/4.png" class="order__img" alt="" />
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper wrapper">
+				<div class="footer__logo logo">
+					<a href="index.html"
+						><img class="footer__logo-img" src="./icons/logo.svg" alt=""
+					/></a>
+				</div>
 
-          <div class="order__text-div">
-            <div class="order__text-num">01</div>
-            <div class="order__text-num-info">Эскиз фасада с цветовыми решениями</div>
-          </div>
+				<div class="footer__nav-wrapper">
+					<nav class="header__nav nav">
+						<ul class="nav__wrapper">
+							<li class="nav__item">
+								<a href="index.html#services" class="nav__item-link">
+									Услуги
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="prices.html#materials" class="nav__item-link">
+									Стоимость материалов и монтажа
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="index.html#portfolio" class="nav__item-link">
+									Портфолио
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="login.html" class="nav__item-link">
+									Отследить заказ
+								</a>
+							</li>
+						</ul>
+					</nav>
 
-          <div class="order__text-div">
-            <div class="order__text-num">02</div>
-            <div class="order__text-num-info">Схема раскладки</div>
-          </div>
-
-          <div class="order__text-div">
-            <div class="order__text-num">03</div>
-            <div class="order__text-num-info">Альбом технических решений</div>
-          </div>
-
-          <div class="order__text-div">
-            <div class="order__text-num">04</div>
-            <div class="order__text-num-info">Подробная спецификация материалов</div>
-          </div>
-
-          <div class="order__text-div">
-            <div class="order__text-num">05</div>
-            <div class="order__text-num-info">Выгодное предложение на работы и материалы</div>
-          </div>
-
-          <button class="order__text-button">Пример пакета документов</button>
-
-
-        </div>
-
-      </div>
-
-      <img src="img/4.png" class="order__img" alt="">
-    </div>
-
-  </main>
-
-</body>
-<footer class="footer">
-  <div class="footer__wrapper wrapper">
-
-    <div class="footer__logo logo">
-      <a href="index.html"><img class="footer__logo-img" src="./icons/logo.svg" alt=""></a>
-    </div>
-
-    <div class="footer__nav-wrapper">
-
-      <nav class="footer__nav nav">
-        <ul class="nav__wrapper">
-          <li class="nav__item">
-            <a href="index.html#services" class="nav__item-link">
-              Услуги
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="prices.html#materials" class="nav__item-link">
-              Стоимость материалов и мотажа
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#portfolio" class="nav__item-link">
-              Портфолио
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="footer__address">Адреса офисов: Санкт-Петербург, пр.Гражданский, 26 Санкт-Петербург, Малая
-        Балканская,
-        7, к. 4</div>
-
-    </div>
-    <div class="footer__div-empty"></div>
-  </div>
-</footer>
-
+					<div class="footer__address">
+						Адреса офисов: Санкт-Петербург, пр.Гражданский, 26 Санкт-Петербург,
+						Малая Балканская, 7, к. 4
+					</div>
+				</div>
+				<div class="footer__div-empty"></div>
+			</div>
+		</footer>
+	</body>
 </html>

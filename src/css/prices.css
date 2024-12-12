@@ -68,12 +68,30 @@
   color: #6F6F6F;
 }
 .material-list__info-button {
+  height: 50px;
+  width: 172px;
   border-radius: 50px;
   background-color: #FF9900;
   border: none;
   font-weight: 700;
   color: #fff;
   padding: 1em;
+}
+.material-list__info-box {
+  display: flex;
+  gap: 1em;
+}
+.material-list__calculate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.material-list__calculate-form {
+  border: 1px solid;
+  font-size: 17.6px;
+}
+.material-list__calculate-form input[type=text] {
+  color: black;
 }
 
 @media screen and (max-width: 1570px) {

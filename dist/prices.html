@@ -1,191 +1,326 @@
 <!DOCTYPE html>
 <html lang="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/normalise.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/prices.css" />
+		<link rel="stylesheet" href="./css/swiper.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="./icons/favicons/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="./icons/favicons/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="./icons/favicons/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./icons/favicons/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="./icons/favicons/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="./icons/favicons/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="./icons/favicons/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="./icons/favicons/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./icons/favicons/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="./icons/favicons/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./icons/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="./icons/favicons/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./icons/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Стоимость материалов и монтажа за м²</title>
+		
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/normalise.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/prices.css">
-  <link rel="stylesheet" href="./css/swiper.css">
-  <title>Стоимость материалов и монтажа за м²</title>
-</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo logo">
+					<a href="index.html"
+						><img class="header__logo-img" src="./icons/logo.svg" alt=""
+					/></a>
+				</div>
+				<nav class="header__nav nav">
+					<ul class="nav__wrapper">
+						<li class="nav__item">
+							<a href="index.html#services" class="nav__item-link"> Услуги </a>
+						</li>
+						<li class="nav__item">
+							<a href="prices.html#materials" class="nav__item-link">
+								Стоимость материалов и монтажа
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="index.html#portfolio" class="nav__item-link">
+								Портфолио
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="login.html" class="nav__item-link">
+								Отследить заказ
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<form action="order.html#order">
+					<button class="header__button button">Оставить заявку →</button>
+				</form>
+			</div>
+		</header>
 
-<body>
+		<main class="main">
+			<div id="materials" class="main__sub-title title__right">
+				<div class="main__white-box main__white-box-left"></div>
+				<h3>Стоимость материалов и монтажа за м²</h3>
+			</div>
 
-  <header class="header">
-    <div class="header__wrapper wrapper">
-      <div class="header__logo logo">
-        <a href="index.html"><img class="header__logo-img" src="./icons/logo.svg" alt=""></a>
-      </div>
-      <nav class="header__nav nav">
-        <ul class="nav__wrapper">
-          <li class="nav__item">
-            <a href="index.html#services" class="nav__item-link">
-              Услуги
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="prices.html#materials" class="nav__item-link">
-              Стоимость материалов и монтажа
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#portfolio" class="nav__item-link">
-              Портфолио
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <form action="order.html#order">
-        <button class="header__button button">
-          Оставить заявку →
-        </button>
-      </form>
-    </div>
-  </header>
+			<div class="wrapper">
+				<div class="production">
+					<div class="production__title">
+						Наше <br />
+						производство
+					</div>
 
-  <main class="main">
+					<div class="production__num">
+						<div class="production__text-title">
+							<p>более 100</p>
+							<p>более 1000</p>
+						</div>
+						<div class="production__info-title">
+							<p>
+								вариантов <br />
+								фасадных <br />
+								решений
+							</p>
+							<p>
+								вариантов по различным <br />
+								цветовым каталогам
+							</p>
+						</div>
+					</div>
 
-    <div id="materials" class="main__sub-title title__right">
-      <div class="main__white-box main__white-box-left"></div>
-      <h3>Стоимость материалов и монтажа за м²</h3>
-    </div>
-
-    <div class="wrapper">
-      <div class="production">
-
-        <div class="production__title">Наше <br> производство</div>
-        
-        <div class="production__num">
-          <div class="production__text-title">
-            <p>более 100</p>
-            <p>более 1000</p>
-          </div>
-          <div class="production__info-title">
-            <p>вариантов <br> фасадных <br> решений</p>
-            <p>вариантов по различным <br> цветовым каталогам</p>
-          </div>
-        </div>
-
-        <div class="production__info">Изготавливаем фасадные кассеты из композитного алюминия и оцинкованной
-          стали, любых сложных форм: угловой, трапециевидной, треугольной. Полиэфирные порошковые краски
-          устойчивы к атмосферным осадкам и УФ-излучению.</div>
-
-      </div>
-    </div>
-    <hr>
-    <div class="wrapper">
-      
-      <div class="material-list">
-        <div>
-          <div class="material-list__number">
-            01
-          </div>
-        </div>
-        <div class="material-list__photo">
-          <div class="material-list__photo-text">Перфорированная фасадная кассета</div>
-          <img class="material-list__photo-img" src="img/1mat.png" alt="">
-        </div>
-
-        <div class="material-list__info">
-          <div class="material-list__info-text">
-            Для сложных контуров зданий и объектов: создание ломаных, изогнутых форм, полное или частичное
-            закрытие стены панелями.</div>
-          <div class="material-list__info-text">Монтаж от 2400 ₽/м²</div>
-          <button class="material-list__info-button">Пример фасада →</button>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="wrapper">
-
-      <div class="material-list">
-        <div>
-          <div class="material-list__number">
-            02
-          </div>
-        </div>
-        <div class="material-list__photo">
-          <div class="material-list__photo-text">Трехслойная сэндвич-панель</div>
-          <img class="material-list__photo-img" src="img/2mat.png" alt="">
-        </div>
-
-        <div class="material-list__info">
-          <div class="material-list__info-text">
-            Сэндвич-панели полностью готовы к монтажу, что значительно экономит время и затраты на строительство.
-            Простая конструкция и функциональность позволяют быстро возводить объекты самого разного назначения: от
-            складов до спортивных сооружений.</div>
-          <div class="material-list__info-text">Монтаж от 800 ₽/м²</div>
-          <button class="material-list__info-button">Пример фасада →</button>
-        </div>
-      </div>
-      
-    </div>
-    <hr>
-    <div class="wrapper">
-      <div class="material-list">
-        <div>
-          <div class="material-list__number">
-            03
-          </div>
-        </div>
-        <div class="material-list__photo">
-          <div class="material-list__photo-text">Профилированный лист МП-18</div>
-          <img class="material-list__photo-img" src="img/3mat.png" alt="">
-        </div>
-
-        <div class="material-list__info">
-          <div class="material-list__info-text">
-            Профнастил МП-18 А, В имеет плавную волнообразную форму профиля и широкую гамму оттенков полимерного
-            покрытия, которое по умолчанию наносится на сторону А, и по желанию клиента – на сторону В.</div>
-          <div class="material-list__info-text">Монтаж от 2000 ₽/м²</div>
-          <button class="material-list__info-button">Пример фасада →</button>
-        </div>
-      </div>
-    </div>
-  </main>
+					<div class="production__info">
+						Изготавливаем фасадные кассеты из композитного алюминия и
+						оцинкованной стали, любых сложных форм: угловой, трапециевидной,
+						треугольной. Полиэфирные порошковые краски устойчивы к атмосферным
+						осадкам и УФ-излучению.
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="wrapper">
+				
+				
+				<div class="material-list">
+					<div>
+						<div class="material-list__number">01</div>
+					</div>
+					<div class="material-list__photo">
+						<div class="material-list__photo-text">
+							Перфорированная фасадная кассета
+						</div>
+						<img class="material-list__photo-img" src="img/1mat.png" alt="" />
+					</div>
 
 
+					<div class="material-list__info">
+						<div class="material-list__info-text">
+							Для сложных контуров зданий и объектов: создание ломаных,
+							изогнутых форм, полное или частичное закрытие стены панелями.
+						</div>
+						<div class="material-list__info-text">Монтаж от 2400 ₽/м²</div>
+							<div class="material-list__info-box">
+								<button class="material-list__info-button">Пример фасада →</button>
+									<div class="material-list__calculate">
+										<div class="material-list__info-text">Расчет стоимости за м²:</div>
+										<form class="material-list__calculate-form">
+											<input id="mat1" type="text" placeholder="Кол-во м²" oninput="updateValue(this)">
+										</form>
+										<div id="itog1" class="material-list__info-text">Итого: 0 ₽</div>
+									</div>
+							</div>
+					</div>
 
-  <footer class="footer">
-    <div class="footer__wrapper wrapper">
+					
+				</div>
 
-      <div class="footer__logo logo">
-        <a href="index.html"><img class="footer__logo-img" src="./icons/logo.svg" alt=""></a>
-      </div>
 
-      <div class="footer__nav-wrapper">
+			</div>
+			<hr/>
+			<div class="wrapper">
 
-        <nav class="footer__nav nav">
-          <ul class="nav__wrapper">
-            <li class="nav__item">
-              <a href="index.html#services" class="nav__item-link">
-                Услуги
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="prices.html#materials" class="nav__item-link">
-                Стоимость материалов и мотажа
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="index.html#portfolio" class="nav__item-link">
-                Портфолио
-              </a>
-            </li>
-          </ul>
-        </nav>
 
-        <div class="footer__address">Адреса офисов: Санкт-Петербург, пр.Гражданский, 26 Санкт-Петербург, Малая
-          Балканская,
-          7, к. 4</div>
+				<div class="material-list">
+					<div>
+						<div class="material-list__number">02</div>
+					</div>
+					<div class="material-list__photo">
+						<div class="material-list__photo-text">
+							Трехслойная сэндвич-панель
+						</div>
+						<img class="material-list__photo-img" src="img/2mat.png" alt="" />
+					</div>
 
-      </div>
-      <div class="footer__div-empty"></div>
-    </div>
-  </footer>
-</body>
+					<div class="material-list__info">
+						<div class="material-list__info-text">
+							Сэндвич-панели полностью готовы к монтажу, что значительно
+							экономит время и затраты на строительство. Простая конструкция и
+							функциональность позволяют быстро возводить объекты самого разного
+							назначения: от складов до спортивных сооружений.
+						</div>
+						<div class="material-list__info-text">Монтаж от 800 ₽/м²</div>
+							<div class="material-list__info-box">
+								<button class="material-list__info-button">Пример фасада →</button>
+									<div class="material-list__calculate">
+										<div class="material-list__info-text">Расчет стоимости за м²:</div>
+										<form class="material-list__calculate-form">
+											<input id="mat2" type="text" placeholder="Кол-во м²" oninput="updateValue(this)">
+										</form>
+										<div id="itog2" class="material-list__info-text">Итого: 0 ₽</div>
+									</div>	
+							</div>
+					</div>
+				</div>
 
+
+			</div>
+			<hr />
+			<div class="wrapper">
+				
+				
+				<div class="material-list">
+					<div>
+						<div class="material-list__number">03</div>
+					</div>
+					<div class="material-list__photo">
+						<div class="material-list__photo-text">
+							Профилированный лист МП-18
+						</div>
+						<img class="material-list__photo-img" src="img/3mat.png" alt="" />
+					</div>
+
+					<div class="material-list__info">
+						<div class="material-list__info-text">
+							Профнастил МП-18 А, В имеет плавную волнообразную форму профиля и
+							широкую гамму оттенков полимерного покрытия, которое по умолчанию
+							наносится на сторону А, и по желанию клиента – на сторону В.
+						</div>
+						<div class="material-list__info-text" id="price3">Монтаж от 2000 ₽/м²</div>
+								<div class="material-list__info-box">
+								<button class="material-list__info-button">Пример фасада →</button>
+									<div class="material-list__calculate">
+										<div class="material-list__info-text">Расчет стоимости за м²:</div>
+										<form class="material-list__calculate-form">
+											<input id="mat3" type="text" placeholder="Кол-во м²" oninput="updateValue(this)">
+										</form>
+										<div id="itog3" class="material-list__info-text">Итого: 0 ₽</div>
+									</div>	
+							</div>
+					</div>
+				</div>
+
+
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__wrapper wrapper">
+				<div class="footer__logo logo">
+					<a href="index.html"
+						><img class="footer__logo-img" src="./icons/logo.svg" alt=""
+					/></a>
+				</div>
+
+				<div class="footer__nav-wrapper"></div>
+					<nav class="header__nav nav">
+						<ul class="nav__wrapper">
+							<li class="nav__item">
+								<a href="index.html#services" class="nav__item-link">
+									Услуги
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="prices.html#materials" class="nav__item-link">
+									Стоимость материалов и монтажа
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="index.html#portfolio" class="nav__item-link">
+									Портфолио
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="login.html" class="nav__item-link">
+									Отследить заказ
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="footer__address">
+						Адреса офисов: Санкт-Петербург, пр.Гражданский, 26 Санкт-Петербург,
+						Малая Балканская, 7, к. 4
+					</div>
+				</div>
+
+				<div class="footer__div-empty"></div>
+			</div>
+		</footer>
+
+		<script src="./js/script.js"></script>
+		<script src="./js/calculate.js"></script>
+	</body>
 </html>
